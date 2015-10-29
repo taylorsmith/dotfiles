@@ -1,0 +1,44 @@
+[user]
+  name = Taylor Smith
+  email = mail@taylorsmith.net
+
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+
+[color "branch"]
+  current = green
+  local = blue
+  remote = magenta
+
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+
+[color "status"]
+  added = green
+  changed = magenta
+  untracked = blue
+
+[core]
+  excludesfile = ~/.gitignore
+  quotepath = false
+  autocrlf = input
+
+[alias]
+  aa = add --all
+  b  = branch
+  ca = commit --amend
+  ci = commit
+  co = checkout
+  dc = diff --cached
+  di = diff
+  ff = merge --ff-only
+  st = status
+
+[merge "gemfilelock"]
+  name = relocks the gemfile.lock
+  driver = bundle install

@@ -1,0 +1,92 @@
+let mapleader=","
+
+color ir_black
+syntax on
+
+set nocompatible
+set hidden
+set background=dark
+set relativenumber
+set notimeout
+set listchars=tab:▸\ ,
+set ttimeout
+set timeoutlen=50
+set showtabline=2
+set number
+set numberwidth=5
+set ruler
+set hlsearch
+set showmatch
+set nowrap
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+set smartindent
+set autoindent " Copy indent from last line when starting new line.
+set vb
+set ignorecase smartcase
+set infercase
+set cmdheight=2
+set clipboard=unnamed
+set colorcolumn=81
+set guifont=Inconsolata-g:h12
+set guioptions-=T
+set guioptions-=r
+set go-=L
+set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set wildignore+=*/node_modules/**,*/bower_components/**
+
+if filereadable(expand("~/.vimrc.bundles"))
+  source ~/.vimrc.bundles
+endif
+
+filetype plugin on
+filetype plugin indent on
+
+" Set syntax for weird files
+autocmd BufNewFile,BufRead *.md   set filetype=markdown
+autocmd BufNewFile,BufRead *.rabl set filetype=ruby
+autocmd BufNewFile,BufRead *.svg  set filetype=xml
+
+" Strip white space on save
+autocmd BufWritePre * StripWhitespace
+
+" Format JSON
+map <leader>j :%!python -m json.tool<cr>
+
+" Flush Command T cache before displaying results
+map <leader>t :CommandTFlush<cr>\|:CommandT<cr>
+
+" Common rails paths
+map <leader>gj :CommandT app/assets/javascripts<cr>
+map <leader>gs :CommandT app/assets/stylesheets<cr>
+map <leader>gc :CommandT app/controllers<cr>
+map <leader>gm :CommandT app/models<cr>
+map <leader>gv :CommandT app/views<cr>
+map <leader>gr :CommandT spec<cr>
+
+let g:jsx_ext_required = 0
+let g:CommandTTraverseSCM = "pwd"
+
+" Move around splits with <c-hjkl>
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
+
+" Replay recording with space
+nnoremap <Space> @q
+
+" Switch between buffers
+nnoremap <leader><leader> <c-^>
+
+" Hit return to remove search highlighting
+nnoremap <cr> :nohlsearch<cr>
+
+" Map %% to current directory
+cnoremap %% <C-R>=expand('%:h').'/'<cr>
+map <leader>v :!open %%<cr><cr>
+
+runtime macros/matchit.vim

@@ -1,0 +1,24 @@
+call plug#begin('~/.vim/bundle')
+
+Plug 'cakebaker/scss-syntax.vim'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'ervandew/supertab'
+Plug 'godlygeek/tabular'
+Plug 'kana/vim-textobj-user'
+Plug 'mxw/vim-jsx'
+Plug 'nelstrom/vim-textobj-rubyblock'
+Plug 'ntpeters/vim-better-whitespace'
+Plug 'othree/html5.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'thoughtbot/vim-rspec'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+Plug 'vim-ruby/vim-ruby'
+Plug 'vim-scripts/gitignore'
+Plug 'wincent/Command-T', { 'do': 'rbenv shell system && cd ruby/command-t && ruby extconf.rb && make' }
+
+call plug#end()
