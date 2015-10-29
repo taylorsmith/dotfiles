@@ -1,3 +1,4 @@
 alias json="python -mjson.tool"
 alias la="ls -la"
+alias mkdir="mkdir -p"
 alias t="tmux"
