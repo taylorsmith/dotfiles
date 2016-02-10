@@ -1,6 +1,7 @@
 call plug#begin('~/.vim/bundle')
 
 Plug 'cakebaker/scss-syntax.vim'
+Plug 'digitaltoad/vim-jade'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ervandew/supertab'
 Plug 'godlygeek/tabular'
