@@ -67,6 +67,9 @@ map <leader>gm :CommandT app/models<cr>
 map <leader>gv :CommandT app/views<cr>
 map <leader>gr :CommandT spec<cr>
 
+" rspec
+map <Leader>r :call RunCurrentSpecFile()<cr>
+
 let g:jsx_ext_required = 0
 let g:CommandTTraverseSCM = "pwd"
 
