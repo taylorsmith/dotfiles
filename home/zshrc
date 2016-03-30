@@ -43,4 +43,11 @@ export DIRSTACKSIZE=10
 
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
+export PATH="/usr/local/bin:$PATH"
+
+if which direnv > /dev/null; then eval "$(direnv hook zsh)"; fi
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+export PATH=".git/safe/../../bin:$PATH"
+
 [[ -s "${HOME}/.aliases" ]] && source "${HOME}/.aliases"

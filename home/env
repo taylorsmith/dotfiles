@@ -1,11 +1,5 @@
 export EDITOR="vim"
 export GREP_OPTIONS="--color=auto"
 export NODE_PATH="/usr/local/lib/node_modules"
-export PATH="/usr/local/bin:$PATH"
-
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-if which direnv > /dev/null; then eval "$(direnv hook zsh)"; fi
-
-export PATH=".git/safe/../../bin:$PATH"
 
 [[ -s "${HOME}/.secrets" ]] && source "${HOME}/.secrets"
