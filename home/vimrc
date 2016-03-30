@@ -30,7 +30,7 @@ set infercase
 set cmdheight=2
 set clipboard=unnamed
 set colorcolumn=81
-set guifont=Inconsolata-g:h12
+set guifont=Inconsolata-g\ for\ Powerline:h14
 set guioptions-=T
 set guioptions-=r
 set go-=L
