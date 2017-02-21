@@ -46,3 +46,5 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 export PATH=".git/safe/../../bin:$PATH"
 
 [[ -s "${HOME}/.aliases" ]] && source "${HOME}/.aliases"
+
+export PATH="$HOME/.yarn/bin:$PATH"
