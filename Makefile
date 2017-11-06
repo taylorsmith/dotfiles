@@ -5,6 +5,7 @@ clean:
 	rm -rf ~/.aliases
 	rm -rf ~/.bash_profile
 	rm -rf ~/.bashrc
+	rm -rf ~/.config/nvim
 	rm -rf ~/.ctags
 	rm -rf ~/.editorconfig
 	rm -rf ~/.env
@@ -13,6 +14,7 @@ clean:
 	rm -rf ~/.gitignore
 	rm -rf ~/.hushlogin
 	rm -rf ~/.inputrc
+	rm -rf ~/.npmrc
 	rm -rf ~/.profile
 	rm -rf ~/.psqlrc
 	rm -rf ~/.railsrc
@@ -30,6 +32,7 @@ build:
 	ln -s $(CURDIR)/home/aliases ~/.aliases
 	ln -s $(CURDIR)/home/bash_profile ~/.bash_profile
 	ln -s $(CURDIR)/home/bashrc ~/.bashrc
+	ln -s $(CURDIR)/home/config/nvim ~/.config/nvim
 	ln -s $(CURDIR)/home/ctags ~/.ctags
 	ln -s $(CURDIR)/home/editorconfig ~/.editorconfig
 	ln -s $(CURDIR)/home/env ~/.env
@@ -38,6 +41,7 @@ build:
 	ln -s $(CURDIR)/home/gitignore ~/.gitignore
 	ln -s $(CURDIR)/home/hushlogin ~/.hushlogin
 	ln -s $(CURDIR)/home/inputrc ~/.inputrc
+	ln -s $(CURDIR)/home/npmrc ~/.npmrc
 	ln -s $(CURDIR)/home/profile ~/.profile
 	ln -s $(CURDIR)/home/psqlrc ~/.psqlrc
 	ln -s $(CURDIR)/home/railsrc ~/.railsrc
