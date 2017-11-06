@@ -1,11 +1,16 @@
 call plug#begin('~/.vim/bundle')
 
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'Shougo/vimproc.vim', { 'do' : 'make' }
 Plug 'cakebaker/scss-syntax.vim'
-Plug 'digitaltoad/vim-jade'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'ervandew/supertab'
 Plug 'godlygeek/tabular'
+Plug 'jbmorgado/vim-pine-script'
+Plug 'joshdick/onedark.vim'
+Plug 'junegunn/fzf.vim'
 Plug 'kana/vim-textobj-user'
+Plug 'mhartington/nvim-typescript'
 Plug 'mxw/vim-jsx'
 Plug 'nelstrom/vim-textobj-rubyblock'
 Plug 'ntpeters/vim-better-whitespace'
@@ -18,8 +23,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
+Plug 'vim-airline/vim-airline'
 Plug 'vim-ruby/vim-ruby'
 Plug 'vim-scripts/gitignore'
-Plug 'wincent/Command-T', { 'do': 'rbenv shell system && cd ruby/command-t && ruby extconf.rb && make' }
 
 call plug#end()
