@@ -38,6 +38,7 @@
   di = diff
   ff = merge --ff-only
   st = status
+  delete-squashed = !git-delete-squashed $@
 
 [merge "gemfilelock"]
   name = relocks the gemfile.lock
