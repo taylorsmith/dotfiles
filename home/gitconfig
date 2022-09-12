@@ -31,7 +31,7 @@
 [alias]
   aa = add --all
   b  = branch
-  ca = commit --amend
+  ca = commit --amend --no-edit
   ci = commit
   co = checkout
   dc = diff --cached
