@@ -1,7 +1,6 @@
 .DS_Store
 .AppleDouble
 .LSOverride
-Icon
 ._*
 .Spotlight-V100
 .Trashes
@@ -10,10 +9,10 @@ ehthumbs.db
 Desktop.ini
 $RECYCLE.BIN/
 
-.env
 .envrc
 .rvmrc
 .sass-cache
 *.orig
+tmp
 
 ./tags
