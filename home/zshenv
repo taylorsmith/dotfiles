@@ -1,1 +1,2 @@
 [[ -s "${HOME}/.env" ]] && source "${HOME}/.env"
+. "$HOME/.cargo/env"
