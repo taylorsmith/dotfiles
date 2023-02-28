@@ -1,4 +1,4 @@
-export EDITOR="vim"
+export EDITOR="nvim"
 export FZF_DEFAULT_COMMAND='ag -g ""'
 export GREP_OPTIONS="--color=auto"
 export NODE_PATH="/usr/local/lib/node_modules"
